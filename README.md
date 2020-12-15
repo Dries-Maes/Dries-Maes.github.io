@@ -5,11 +5,11 @@
 
 
 - 🔭 I’m currently working as a student
-- 🌱 I’m currently learning C#
+- 🌱 I’m currently learning C#e
 - 👯 I’m looking to collaborate with Obelisk.
 - 🤔 I’m looking for help with -.
-- 💬 Ask me about anything! 
+- 💬 Ask me about a  nything! 
 - 📫 How to reach me: 0484623997
-- 😄 Pronouns: oO
-- ⚡ Fun fact: ...
+- 😄 Pronouns: oOeee
+- ⚡ Fun fact: ... testje testje2 ee
 -->
