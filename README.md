@@ -11,5 +11,5 @@
 - 💬 Ask me about a  nything! 
 - 📫 How to reach me: Call me maybe.. 
 - 😄 Pronouns:  
-- ⚡ Fun fact:  
+- ⚡ Fun fact: update 
 -->
