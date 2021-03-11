@@ -716,8 +716,10 @@ section {
   right: 15px;
 }
 .img-about{
-  height: auto;
- 
+ width:100%;
+max-width: max-content;
+margin: auto;
+
 }
 /*--------------------------------------------------------------
 # Portfolio Details
