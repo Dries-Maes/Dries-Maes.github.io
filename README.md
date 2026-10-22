@@ -1,3 +1,3 @@
 ### Hi there 👋
 
-- 🌱 I love you!
+- 🌱 Ask away!
