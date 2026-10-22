@@ -162,37 +162,15 @@
   }
 
   /**
-   * Age, calculated from the birth date so it never goes stale
+   * Age, calculated from the birth date (YYYY-MM or YYYY-MM-DD) so it never goes stale.
+   * Without a day, the birthday counts from the first of the month.
    */
   select('[data-birthdate]', true).forEach(el => {
-    const [year, month, day] = el.dataset.birthdate.split('-').map(Number)
+    const [year, month, day = 1] = el.dataset.birthdate.split('-').map(Number)
     const today = new Date()
     const hadBirthdayThisYear = today.getMonth() + 1 > month || (today.getMonth() + 1 === month && today.getDate() >= day)
     el.textContent = today.getFullYear() - year - (hadBirthdayThisYear ? 0 : 1)
   })
-
-  /**
-   * Skills animation: fill the bars once the skills come into view
-   */
-  let skillsContent = select('.skills-content');
-  if (skillsContent) {
-    const fillSkillBars = () => {
-      select('.progress .progress-bar', true).forEach((el) => {
-        el.style.width = el.getAttribute('aria-valuenow') + '%'
-      });
-    }
-    if ('IntersectionObserver' in window) {
-      const skillsObserver = new IntersectionObserver((entries) => {
-        if (entries.some(entry => entry.isIntersecting)) {
-          fillSkillBars()
-          skillsObserver.disconnect()
-        }
-      }, { rootMargin: '0px 0px -20% 0px' })
-      skillsObserver.observe(skillsContent)
-    } else {
-      fillSkillBars()
-    }
-  }
 
   /**
    * Initiate portfolio details lightbox
