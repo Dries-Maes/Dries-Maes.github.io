@@ -6,7 +6,7 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>▪ Dries Maes ▪</title>
-  <meta name="description"
+  <meta name="description" data-i18n-attr="content:meta.description"
     content="Dries Maes uit Gent: adjunct-diensthoofd ICT, .NET-developer en projectmanager. Ervaring, vaardigheden, portfolio en contactgegevens.">
 
   <!-- Favicons -->
@@ -37,14 +37,20 @@
   <!-- ======= Mobile nav toggle button ======= -->
   <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
 
+  <!-- ======= Language toggle ======= -->
+  <div class="lang-switch" role="group" aria-label="Taal / Language">
+    <button type="button" data-lang="nl" lang="nl" title="Nederlands" aria-pressed="true">NL</button>
+    <button type="button" data-lang="en" lang="en" title="English" aria-pressed="false">EN</button>
+  </div>
+
   <!-- ======= Header ======= -->
   <header id="header" class="d-flex flex-column justify-content-center">
 
     <nav id="navbar" class="navbar nav-menu">
       <ul>
         <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Over mij</span></a></li>
-        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Mijn ervaring</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span data-i18n="nav.about">Over mij</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span data-i18n="nav.resume">Mijn ervaring</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         <li><a href="assets/CV-Dries-Maes.pdf" target="_blank" rel="noopener" class="nav-link"><i class="bx bxs-file-pdf"></i> <span>Download CV</span></a></li>
       </ul>
@@ -56,7 +62,8 @@
   <section id="hero" class="d-flex flex-column">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Dries Maes</h1>
-      <p>Uw <span class="typed" data-typed-items=".NET-developer, projectmanager, IT-consultant"></span>?</p>
+      <p><span data-i18n="hero.your">Uw</span> <span class="typed" data-i18n-attr="data-typed-items:hero.roles"
+          data-typed-items=".NET-developer, projectmanager, IT-consultant"></span>?</p>
       <div class="social-links mt-3">
         <a href="https://github.com/dries-maes" target="_blank" rel="noopener" aria-label="GitHub"><i class="bx bxl-github"></i></a>
         <a href="https://www.linkedin.com/in/maes01/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bx bxl-linkedin"></i></a>
@@ -73,7 +80,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Over mij</h2>
+          <h2 data-i18n="about.title">Over mij</h2>
           <div class="tech-logos">
             <div class="tech-logos-track">
               <i class="devicon-csharp-plain" title="C#"></i>
@@ -106,7 +113,7 @@
           </div>
           <div class="col-xl-8 pt-4 pt-lg-0 content">
 
-            <p class="mx-0">
+            <p class="mx-0" data-i18n="about.intro">
               Ik werd geboren in een familie van plantrekkers. Hoewel we veel verschillende profielen tellen, hebben
               we allemaal één ding gemeen: wanneer we voor een probleem komen te staan, wanneer we een uitdaging
               aangaan of zelfs wanneer we grootse en onmogelijke ambities hebben, trekken we ons plan. Wat je ook van
@@ -116,28 +123,28 @@
             <div class="row">
               <div class="col-lg-6 col-xl-4">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Geboren:</strong> <span>4 juni 1986</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Straat:</strong> <span>Liefbilkstraat 11</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Stad:</strong> <span>Gent, België</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.born">Geboren:</strong> <span data-i18n="about.bornValue">4 juni 1986</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.street">Straat:</strong> <span>Liefbilkstraat 11</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.city">Stad:</strong> <span data-i18n="about.cityValue">Gent, België</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 col-xl-4">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Kinderen:</strong> <span>2</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span>Getrouwd</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Gsm:</strong> <span>+32 484 62 39 97</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.children">Kinderen:</strong> <span>2</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Status:</strong> <span data-i18n="about.statusValue">Getrouwd</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.mobile">Gsm:</strong> <span>+32 484 62 39 97</span></li>
                 </ul>
               </div>
               <div class="col-lg-6 col-xl-4">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Leeftijd:</strong> <span data-birthdate="1986-06-04">40</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Studies:</strong> <span>Master Bestuurskunde</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>E-mail:</strong> <span>dm.inbox@outlook.com</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.age">Leeftijd:</strong> <span data-birthdate="1986-06-04">40</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.studies">Studies:</strong> <span data-i18n="about.studiesValue">Master Bestuurskunde</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong data-i18n="about.email">E-mail:</strong> <span>dm.inbox@outlook.com</span></li>
                 </ul>
               </div>
             </div>
 
-            <p>
+            <p data-i18n="about.text">
               Out-of-the-box, innovatief, creatief en analytisch denken zijn mijn troeven. Mijn studies en
               werkervaring leerden mij om problemen snel en efficiënt op te lossen en er, door middel van een goede
               planning, op te anticiperen. Ik leer snel en graag bij en ik verwelkom nieuwe ervaringen. Ik zoek een
@@ -227,7 +234,7 @@
             </div>
 
             <div class="progress">
-              <span class="skill">Functionele analyse • Businessanalyse • UX/UI <i class="val">95%</i></span>
+              <span class="skill"><span data-i18n="skills.analysis">Functionele analyse • Businessanalyse • UX/UI</span> <i class="val">95%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
               </div>
@@ -245,7 +252,7 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Ervaring</h2>
+          <h2 data-i18n="resume.title">Ervaring</h2>
           <div class="quote-box p-3">
             <h4>"The noblest pleasure is the joy of understanding." Leonardo da Vinci</h4>
           </div>
@@ -253,10 +260,10 @@
 
         <div class="row">
           <div class="col-lg-6">
-            <h3 class="resume-title">Samenvatting</h3>
+            <h3 class="resume-title" data-i18n="resume.summary">Samenvatting</h3>
             <div class="resume-item pb-0">
               <h4>Dries Maes</h4>
-              <p><em>
+              <p><em data-i18n="resume.summaryText">
                 Na 3 jaar als projectmanager in de publieke IT-sector gewerkt te hebben, was het duidelijk dat IT
                 mijn toekomst werd. Ik herschoolde mij en ging aan de slag als .NET C#-ontwikkelaar, waar ik snel
                 doorgroeide tot product owner/manager. Mijn troeven: ik ben leergierig, makkelijk in de omgang en
@@ -265,28 +272,28 @@
                 lange termijn.
               </em></p>
               <ul>
-                <li>Liefbilkstraat 11, 9040 Gent, België</li>
-                <li>0484/62.39.97</li>
+                <li data-i18n="resume.address">Liefbilkstraat 11, 9040 Gent, België</li>
+                <li data-i18n="resume.phone">0484/62.39.97</li>
                 <li><a href="mailto:dm.inbox@outlook.com">dm.inbox@outlook.com</a></li>
               </ul>
             </div>
 
-            <h3 class="resume-title">Scholing</h3>
+            <h3 class="resume-title" data-i18n="resume.education">Scholing</h3>
             <div class="resume-item">
-              <h4>Intensieve opleiding .NET Developer</h4>
+              <h4 data-i18n="resume.training">Intensieve opleiding .NET Developer</h4>
               <h5>2020 - 2021</h5>
               <p><em>Obelisk - Multimedi - DotNetLab</em></p>
-              <p>
+              <p data-i18n="resume.trainingText">
                 Een intensieve voltijdse opleiding van 9 maanden met de focus op .NET C#, gericht op de praktische
                 vaardigheden die op de werkvloer verwacht worden. We kregen een breed leerpakket met onderdelen zoals
                 CLI, UWP, MVC, Angular, Razor, Blazor, JavaScript, TypeScript, XAML, YAML en nog veel meer.
               </p>
             </div>
             <div class="resume-item">
-              <h4>Master in de bestuurskunde en publiek management</h4>
+              <h4 data-i18n="resume.master">Master in de bestuurskunde en publiek management</h4>
               <h5>2011 - 2016</h5>
-              <p><em>Universiteit Gent</em></p>
-              <p>
+              <p><em data-i18n="resume.university">Universiteit Gent</em></p>
+              <p data-i18n="resume.masterText">
                 De master in de bestuurskunde en publiek management vormt polyvalente mensen die de inzichten en
                 vaardigheden hebben om in de hedendaagse publieke sector een modern bestuur te garanderen. Efficiënt
                 leidinggeven berust op een juiste dosering van kennis en vaardigheden.
@@ -294,18 +301,18 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <h3 class="resume-title">Professionele ervaring</h3>
+            <h3 class="resume-title" data-i18n="resume.professional">Professionele ervaring</h3>
 
             <div class="resume-item">
-              <h4>Adjunct-diensthoofd ICT</h4>
-              <h5>2022 - heden</h5>
-              <p><em>Fonds Wetenschappelijk Onderzoek</em></p>
+              <h4 data-i18n="resume.fwo.role">Adjunct-diensthoofd ICT</h4>
+              <h5 data-i18n="resume.fwo.period">2022 - heden</h5>
+              <p><em data-i18n="resume.fwo.employer">Fonds Wetenschappelijk Onderzoek</em></p>
               <ul>
-                <li>
+                <li data-i18n="resume.fwo.team">
                   Als adjunct-diensthoofd sta ik voor een team van 14 developers en 2 IT-medewerkers, verdeeld in 4
                   teams (3 × Scrum, 1 × Kanban).
                 </li>
-                <li>
+                <li data-i18n="resume.fwo.roles">
                   Naast mijn verantwoordelijkheden als leidinggevende vervul ik ook de volgende rollen:
                   projectmanager, product owner, functioneel analist, businessanalist, facilitator en
                   DevOps-engineer.
@@ -316,9 +323,9 @@
             <div class="resume-item">
               <h4>C# .NET developer</h4>
               <h5>2021 - 2022</h5>
-              <p><em>Fonds Wetenschappelijk Onderzoek via DotNetLab</em></p>
+              <p><em data-i18n="resume.developer.employer">Fonds Wetenschappelijk Onderzoek via DotNetLab</em></p>
               <ul>
-                <li>
+                <li data-i18n="resume.developer.text">
                   Developer voor .NET C#-projecten, DDD-architectuur en Angular-frontend, in een uitdagend traject
                   waarin we alle oude talen en structuren vernieuwen.
                 </li>
@@ -326,22 +333,22 @@
             </div>
 
             <div class="resume-item">
-              <h4>Projectmanager: Belastingen</h4>
+              <h4 data-i18n="resume.cipal.role">Projectmanager: Belastingen</h4>
               <h5>2018 - 2020</h5>
               <p><em>Cipal Schaubroeck NV</em></p>
               <ul>
-                <li>
+                <li data-i18n="resume.cipal.text">
                   Projectleider: analyse, implementatie en migratiemanagement.
                 </li>
               </ul>
             </div>
 
             <div class="resume-item">
-              <h4>Productbeheer: GAS-boetes en belastingen</h4>
+              <h4 data-i18n="resume.cevi.role">Productbeheer: GAS-boetes en belastingen</h4>
               <h5>2017 - 2018</h5>
               <p><em>CEVI NV</em></p>
               <ul>
-                <li>
+                <li data-i18n="resume.cevi.text">
                   Als link tussen de ontwikkelaars en de klant was ik verantwoordelijk voor de analyses, de offertes,
                   het opmaken van bestekken en de projectopvolging.
                 </li>
@@ -366,10 +373,10 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="assets/Portfolio/Drimon-Console-App/thumb.jpg" class="img-fluid" width="960" height="540"
-                loading="lazy" alt="Viswinkel console-app">
+                loading="lazy" data-n="1" data-i18n-attr="alt:project.viswinkel.screenshot" alt="Viswinkel: screenshot 1">
               <div class="portfolio-info">
-                <h4>Viswinkel</h4>
-                <p>Console-app</p>
+                <h4 data-i18n="project.viswinkel">Viswinkel</h4>
+                <p data-i18n="portfolio.consoleApp">Console-app</p>
                 <div class="portfolio-links">
                   <a href="portfolio-details-viswinkel.html" class="portfolio-details-lightbox"
                     data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -383,10 +390,10 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="assets/Portfolio/PizzaDremma-Console-App/thumb.jpg" class="img-fluid" width="960" height="540"
-                loading="lazy" alt="Pizzashop console-app">
+                loading="lazy" data-n="1" data-i18n-attr="alt:project.pizzashop.screenshot" alt="Pizzashop: screenshot 1">
               <div class="portfolio-info">
-                <h4>Pizzashop</h4>
-                <p>Console-app</p>
+                <h4 data-i18n="project.pizzashop">Pizzashop</h4>
+                <p data-i18n="portfolio.consoleApp">Console-app</p>
                 <div class="portfolio-links">
                   <a href="portfolio-details-pizzashop.html" class="portfolio-details-lightbox"
                     data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a>
@@ -400,9 +407,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="assets/Portfolio/Coffeeshop-Windows-Forms/thumb.jpg" class="img-fluid" width="960" height="540"
-                loading="lazy" alt="Coffeeshop Windows Forms-app">
+                loading="lazy" data-n="1" data-i18n-attr="alt:project.coffeeshop.screenshot" alt="Coffeeshop: screenshot 1">
               <div class="portfolio-info">
-                <h4>Coffeeshop</h4>
+                <h4 data-i18n="project.coffeeshop">Coffeeshop</h4>
                 <p>Windows Forms</p>
                 <div class="portfolio-links">
                   <a href="portfolio-details-coffeeshop.html" class="portfolio-details-lightbox"
@@ -417,9 +424,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="assets/Portfolio/Ganzenbord-WPF-XAML/thumb.jpg" class="img-fluid" width="960" height="540"
-                loading="lazy" alt="Ganzenbord WPF-app">
+                loading="lazy" data-n="1" data-i18n-attr="alt:project.ganzenbord.screenshot" alt="Ganzenbord: screenshot 1">
               <div class="portfolio-info">
-                <h4>Ganzenbord</h4>
+                <h4 data-i18n="project.ganzenbord">Ganzenbord</h4>
                 <p>WPF XAML</p>
                 <div class="portfolio-links">
                   <a href="portfolio-details-ganzenbord.html" class="portfolio-details-lightbox"
@@ -434,9 +441,9 @@
           <div class="col-lg-4 col-md-6 portfolio-item">
             <div class="portfolio-wrap">
               <img src="assets/Portfolio/Jobdagsite-HTML-CSS-JS/thumb.jpg" class="img-fluid" width="960" height="540"
-                loading="lazy" alt="Jobdagsite in HTML, CSS en JS">
+                loading="lazy" data-n="1" data-i18n-attr="alt:project.jobdagsite.screenshot" alt="Jobdagsite: screenshot 1">
               <div class="portfolio-info">
-                <h4>Jobdagsite</h4>
+                <h4 data-i18n="project.jobdagsite">Jobdagsite</h4>
                 <p>HTML CSS JS</p>
                 <div class="portfolio-links">
                   <a href="portfolio-details-jobdagsite.html" class="portfolio-details-lightbox"
@@ -469,13 +476,13 @@
             <div class="info">
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
-                <h4>Adres:</h4>
-                <p>Liefbilkstraat 11, Gent, België</p>
+                <h4 data-i18n="contact.address">Adres:</h4>
+                <p data-i18n="contact.addressValue">Liefbilkstraat 11, Gent, België</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
-                <h4>E-mail:</h4>
+                <h4 data-i18n="about.email">E-mail:</h4>
                 <a href="mailto:dm.inbox@outlook.com">
                   <p>dm.inbox@outlook.com</p>
                 </a>
@@ -483,7 +490,7 @@
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
-                <h4>Gsm:</h4>
+                <h4 data-i18n="about.mobile">Gsm:</h4>
                 <a href="tel:+32484623997">
                   <p>+32 484 62 39 97</p>
                 </a>
@@ -521,13 +528,16 @@
   </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" aria-label="Terug naar boven"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"
+    data-i18n-attr="aria-label:backToTop" aria-label="Terug naar boven"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/typed.js/typed.min.js"></script>
+
+  <!-- Translations (runs before main.js, so the typed hero text starts in the right language) -->
+  <script src="assets/js/i18n.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

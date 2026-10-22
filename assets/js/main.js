@@ -138,21 +138,27 @@
   }
 
   /**
-   * Hero type effect
+   * Hero type effect, restarted with the new words when the language changes
    */
   const typed = select('.typed')
   if (typed && typeof Typed !== 'undefined') {
-    let typed_strings = typed.getAttribute('data-typed-items').split(',').map(item => item.trim())
-    new Typed('.typed', {
-      strings: typed_strings,
-      loop: true,
-      typeSpeed: 75,
-      backSpeed: 50,
-      backDelay: 1200,
-      cursorChar: '...',
-      showCursor: true,
-      fadeOut: false,
-    });
+    let typedInstance = null
+    const startTyped = () => {
+      if (typedInstance) typedInstance.destroy()
+      let typed_strings = typed.getAttribute('data-typed-items').split(',').map(item => item.trim())
+      typedInstance = new Typed('.typed', {
+        strings: typed_strings,
+        loop: true,
+        typeSpeed: 75,
+        backSpeed: 50,
+        backDelay: 1200,
+        cursorChar: '...',
+        showCursor: true,
+        fadeOut: false,
+      });
+    }
+    startTyped()
+    document.addEventListener('languagechanged', startTyped)
   }
 
   /**
@@ -230,6 +236,8 @@
         mirror: false
       })
     });
+    // Translated text changes the page height, so recalculate where the animations trigger
+    document.addEventListener('languagechanged', () => AOS.refresh())
   }
 
 })()
